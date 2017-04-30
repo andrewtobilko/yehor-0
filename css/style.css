@@ -102,3 +102,9 @@
 .container .nav-wrapper a.selected {
     border-bottom: 3px solid green;
 }
+
+.container .content-wrapper .content-block-wrapper .content-block .list .list-item .list-item-picture {
+    background: red;
+    margin-right: 20px;
+    width: 20px;
+}
