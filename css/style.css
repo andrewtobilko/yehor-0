@@ -1,3 +1,74 @@
-* {
-    background: red;
+.container .content-wrapper {
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-justify-content: center;
+    justify-content: center;
+    background: green;
+}
+
+.container .content-wrapper .content-block-wrapper {
+    width: 33%;
+    background: lightgray;
+    padding: 20px;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block {
+    background: yellow;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block .title {
+    display: -webkit-flex;
+    display: flex;
+    background: lightgray;
+    text-transform: uppercase;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block .title .title-block {
+    width: 50%;
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block .title .title-block.selected {
+    background: #fff;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 0;
+    color: crimson;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block .title .title-block:not(.selected) {
+    border-bottom: 1px solid grey;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block .title .title-block .number {
+    font-size: 50px;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block .title .title-block .type {
+    font-size: 14px;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block .list {
+    background: #fff;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block .list .list-item {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block .show-more {
+    padding: 5px 10px 5px 5px;
+    text-align: right;
+}
+
+.container .content-wrapper .content-block-wrapper .content-block .show-more::after {
+    content: "V";
 }
